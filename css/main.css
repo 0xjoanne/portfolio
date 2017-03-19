@@ -176,6 +176,15 @@ h3,
 	font-size: 12px;
 	line-height: 20px;
 }
+.contact__input,
+.contact__submit{
+	border:none;
+	outline: none;
+}
+.work__showcase,
+.work__info{
+	height: 315px;
+}
 /***************
    Main Content
 ***************/
@@ -281,7 +290,6 @@ work
 ***/
 
 .work__showcase{
-	height: 315px;
 	margin-top: 0;
 }
 .work__showcase:before{
@@ -293,12 +301,15 @@ work
 	transition: all 0.5s ease-in-out;
 }
 .work__info{
-	top: 40%;
+	top: 0;
 	left: 0;
 	text-align: center;
 	-webkit-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
+}
+.work__info h3{
+	margin-top: 120px;
 }
 
 /***************
@@ -318,24 +329,14 @@ main sub content
 /****
 contact
 ***/
-.contact__input{
-	border:none;
-	border-bottom: 1px solid #999;
-	padding: 15px;
-	outline: none;
+.contact__list{
+	margin-top: 30px;
 }
-.contact__submit{
-	border:none;
-	background: none;
-	font-weight: 700;
-	margin-top: 50px;
+.contact__item{
+	display: inline-block;
+	margin-right: 25px;
 }
-.input--short{
-	width: 210px;
-}
-.input--long{
-	width: 482px;
-}
+
 
 /***********
 	Footer
