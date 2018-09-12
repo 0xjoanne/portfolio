@@ -402,6 +402,7 @@ contact
 	.main-header {
 		flex-direction: column;
 		text-align: center;
+		margin-bottom: 50px;
 	}
 
 	.work-page .main-header {
@@ -409,15 +410,6 @@ contact
 	}
 
 	.main-nav {
-		justify-content: center;
-		margin-top: 20px;
-	}
-
-	.nav__item {
-		display: block;
-	}
-
-	.nav__icon {
 		display: none;
 	}
 
