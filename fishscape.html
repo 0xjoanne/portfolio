@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 	<title>Qiongrong Jiang - Portfolio</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="work-page">
 	<main class="main-wrapper">
 		<!-- main header -->
 		<header class="main-header">
-			<a href="" class="logo">QIONGRONG JIANG</a>
+			<a href="http://qiongrongjiang.com/" class="logo">QIONGRONG JIANG</a>
 
 			<nav class="main-nav">
 
@@ -25,23 +26,75 @@
 		<!-- main content -->
 		<div class="main-content">
 			<!-- intro -->
-			<div class="content__intro float--right text-align--right color--darkgrey">
-				<h2>FishScape</h2>
-        <p>Developer</p>
-				<p>Socket.io + Phaser.js</p>
-				<p><a href="https://fishscape.herokuapp.com/" class="color--pink" target="_blank">Visit Website</a>  or  <a href="https://github.com/QiongrongJiang/fishscape" class="color--pink" target="_blank">Check Code</a></p>
+			<div class="content__slogan">
+				<div class="content__intro float--right text-align--right color--darkgrey">
+					<h2>FishScape<br> Real-time Multiplayer<br> Web Action Game</h2>
+	        <p>Developer</p>
+					<p>Socket.io + Phaser.js</p>
+					<p><a href="https://fishscape.herokuapp.com/" class="color--pink" target="_blank">Visit Website</a>  or  <a href="https://github.com/QiongrongJiang/fishscape" class="color--pink" target="_blank">Check Code</a></p>
+				</div>
 			</div>
+
 			<!-- hero image -->
 			<img src="img/fishscape.png" alt="" class="hero-img">
 			<!-- detail -->
 			<div class="main-sub">
 				<aside class="sub-sidebar float--left text-align--right color--darkgrey">
-					<h2>Summary</h2>
+					<h2>Concept</h2>
 					<p>Multiplayer Web Game</p>
 				</aside>
 				<div class="sub-content float--left">
 					<p>FISHSCAPE! is a real-time multiplayer web action game that offers two ways to enjoy! Each player will be entered into an ocean scenario where one randomly selected player will be created as the villainous shark whose main objective is to rid his kingdom of pesky annoying fish while at the same time feeding his hunger! The remaining players will be created as fish, in which their main objective is to escape the menacing teeth of the shark, while outlasting the time limit to be crowned the fittest, smartest, and last surviving fish of his school!</p>
-          <p>Design by Erick Hernandez</p>
+          <p>Design by <a href="http://ehz.design/" class="hover__color--pink" target="_blank"></a>Erick Hernandez</p>
+				</div>
+			</div>
+			<div class="main-sub">
+				<aside class="sub-sidebar float--left text-align--right color--darkgrey">
+					<h2>What Makes <br>Fishscape</h2>
+					<p>Better Than Oxygen</p>
+				</aside>
+				<div class="sub-content float--left">
+					<p>- Easy enough to pick up concept within a few minutes! <br>
+						- Games are quick and don’t require hours of engagement and dedication. <br>
+						- Play against friends or strangers! <br>
+						- Anyone can play kids, adults and even fish! ........... but not sharks!</p>
+				</div>
+			</div>
+			<div class="main-sub">
+				<aside class="sub-sidebar float--left text-align--right color--darkgrey">
+					<h2>Target Audience</h2>
+					<p>User Positioning</p>
+				</aside>
+				<div class="sub-content float--left">
+					<p>Users who enjoy quick online multiplayer games that don’t require a lot of strategy or hours of learning. As well as users that would like to kill a few minutes of boredom or free time with some fun gameplay. </p>
+				</div>
+			</div>
+			<div class="main-sub">
+        <img src="img/fishscape-design.png" alt="" class="hero-img">
+      </div>
+			<div class="main-sub">
+				<aside class="sub-sidebar float--left text-align--right color--darkgrey">
+					<h2>Development <br>Process</h2>
+					<p>Production Logic</p>
+				</aside>
+				<div class="sub-content float--left">
+					<p>- Create basic idea of game to get started <br>
+					- Research best, easiest game library <br>
+					- Incorporate game library with socket.io <br>
+					- Design interface and find sprites to incorporate into game <br>
+					- Create simple game logic <br>
+					- Create process for beginning and ending a game</p>
+				</div>
+			</div>
+			<div class="main-sub">
+				<aside class="sub-sidebar float--left text-align--right color--darkgrey">
+					<h2>Data Flow</h2>
+					<p>Socket.io</p>
+				</aside>
+				<div class="sub-content float--left">
+					<p><b>From Client:</b> Player info( socket.id, username), Player movements, Phaser.js functionality, Players status(creation and death)</p>
+					<p><b>Server:</b> Sort and store players, Gameplay functionality/logic(stages, timer etc.)</p>
+					<p><b>Server to other client:</b> Other players movements and death</p>
 				</div>
 			</div>
 			<div class="main-sub">
@@ -50,9 +103,9 @@
 					<p>Playable + Enjoyable</p>
 				</aside>
 				<div class="sub-content float--left">
-					<p>- Using Phaser.js to create sprites and animation<br>
-- Support real-time multiplayer by using Socket.io <br>
-- Set up different gaming levels</p>
+					<p>- Incorporate Phaser.js with Socket.io<br>
+- Creating separate game rooms to play multiple games at once <br>
+- Creating an intriguing game logic</p>
 				</div>
 			</div>
 		</div>

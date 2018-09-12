@@ -1,9 +1,11 @@
 $(document).ready(function(){
+	document.body.addEventListener('touchstart', () => {})
+	
 	// anchor tag jump smooth
-	$('.nav__list a').on('click', function(e) {
+	$('.nav__item').on('click', function(e) {
 		var href = $(this).attr('href');
 		var pos = $(href).offset().top;
-	
+
 		$('html, body').animate({
 			scrollTop: pos
 		}, 1000);
@@ -16,21 +18,21 @@ $(document).ready(function(){
 	//menu animation
 	var toggle = 0;
 	$('.nav__icon').click(function(){
-		if(toggle == 0){
+		if(toggle === 0){
 			$('.icon--top').addClass('icon__line--animate__top').fadeOut();
 			$('.icon--bottom').addClass('icon__line--animate__top').fadeOut();
 			setTimeout(function(){
 				$('.icon__line').removeClass("rotate-opposite");
 				$('.icon__line').addClass("rotate");
-				var children = $('.nav__list').children();
-				var fadeTime = 250 * (children.length - 1);
-				for (var i = 0; i <= children.length - 1; i++) {
-					$(children[i]).delay(fadeTime).fadeIn();
-					fadeTime -= 250;
-				}
+				$('.nav__item').delay(600).fadeIn();
+
+				// var fadeTime = 250 * ($('.nav__item').length - 1);
+				// for (var i = 0; i <= $('.nav__item').length - 1; i++) {
+				// 	$('.nav__item')[i].delay(fadeTime).fadeIn();
+				// 	fadeTime -= 250;
+				// }
 				setTimeout(function(){
 					$('.icon__arrow').fadeIn();
-					
 				},600);
 			},500);
 			toggle = 1
@@ -39,12 +41,12 @@ $(document).ready(function(){
 			setTimeout(function(){
 				$('.icon__line').removeClass("rotate");
 				$('.icon__line').addClass("rotate-opposite");
-				var fadeTime = 0;
-				var children = $('.nav__list').children();
-				for (var i = 0; i <= children.length - 1; i++) {
-					$(children[i]).delay(fadeTime).fadeOut();
-					fadeTime += 100;
-				}
+				$('.nav__item').fadeOut();
+				// var fadeTime = 0;
+				// for (var i = 0; i <= $('.nav__item').length - 1; i++) {
+				// 	$('.nav__item')[i].delay(fadeTime).fadeOut();
+				// 	fadeTime += 100;
+				// }
 				setTimeout(function(){
 					$('.icon--top').addClass('icon__line--animate__width').fadeIn();
 					$('.icon--bottom').addClass('icon__line--animate__width').fadeIn();
